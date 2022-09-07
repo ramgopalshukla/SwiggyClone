@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+<style>
+#g-parent-div{
+   display: flex;
+   flex: row;
+   /* border: 2px dashed crimson; */
+   min-height: 100%;
+    background: #e9ecee;
+}
+#parent-div-left{
+    width: 70%;
+    height: 500px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+
+}
+#parent-div-right{
+    /* border: 2px solid teal; */
+   width: 30%;
+   height: 500px;
+
+}
+#g-left-div-top{
+    /* border: 1px dashed yellow; */
+    height: 30%;
+    position: relative;
+    margin-left: 25px;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 35px 40px 39px;
+
+}
+#g-left-div-bottom{
+    /* border: 1px dashed red; */
+    height:70%
+
+}
+#top-ist{
+    display: flex;
+    justify-content: space-between;
+}
+#address-div{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #282c3f;
+}
+#top-iind{
+    margin-bottom: 3px;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #282c3f;
+    text-transform: capitalize;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+}
+#top-third{
+    margin-left: 15px;
+    color: #93959f;
+    max-width: 480px;
+    line-height: 18px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+
+}
+#top-last{
+    margin-left: 15px;
+    color: #282c3f;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+
+}
+#address-parent{
+    display: flex;
+
+}
+#tick-image{
+    width: 100%;
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#hfour{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fc8019;
+    
+}
+.g-card-div{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+/* .g-icon-image{
+    /* width: 30%; */
+
+img{
+    width: 100%;
+    width: 30px;
+    height: 40px;
+}
+#payment-main-div{
+    margin-top: 20px;
+    display: flex;
+  
+
+
+}
+.g-payment-method{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#payment-div-left{
+    display: flex;
+    flex-direction: column;
+    background: #e9ecee;
+    width: 30%;
+}
+.select-payment-method{
+    margin-left: 30px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #282c3f;
+}
+#g-left-div-bottom{
+    position: relative;
+    margin-left: 25px;
+    background: #fff;
+    margin-bottom: 20px;
+    /* padding: 35px 40px 39px; */
+
+}
+#payment-div-right{
+    display: flex;
+    width: 60%;
+    margin-right: 100px;
+    flex-direction: column;
+}
+#atm-company-div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+   
+}
+.atm-image{
+    /* display: block; */
+    width: 30px;
+    height: 15px;
+}
+#g-accept{
+    font-size: 12px;
+    font-weight: 500;
+    color: #7e808c;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-right: 5px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+}
+.atm-img-div{
+    margin-left: -85px;
+}
+#add-card-div{
+    display: flex;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+#g-add-new{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#g-add-new-card-div{
+    color: #282c3f;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+}
+#via-card{
+    font-size: 13px;
+    color: #93959f;
+    margin-top: 4px;
+    text-transform: none;
+    line-height: 16px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    letter-spacing: 0;
+    
+
+}
+#add-new-last{
+    background: #fff!important;
+    color: #60b246!important;
+    border: 1px solid #60b246!important;
+    margin-top: 16px;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 16px;
+    background: #60b246;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 142px;
+
+}
+#plus-image{
+    height: 30px;
+   
+}
+#plus-div{
+    border: 1px solid black;
+    height: 30px;
+}
+#g-new{
+   margin-left: 10px;
+}
+#new-image{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+}
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <div id="g-parent-div">
+     <div id="parent-div-left">
+        <div id="g-left-div-top">
+            <div id="top-ist">
+                <div id="address-parent">
+                    <div id="address-div">Delivery address</div>
+                    <div ><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-qmMwocqusq9Xt-Y4BaDl7NBuu4f6JGyOA&usqp=CAU"
+                        alt="" id="tick-image" ></div>
+                </div>
+                <div>
+                    <h4 id="hfour">CHANGE</h4>
+                </div>
+               
+            </div>
+            
+            <div id="top-iind">Home</div>
+            <div id="top-third">prayag raj uttra pradesh 212216</div>
+            <div id="top-last">55 mins</div>
+        </div>
+         <!-- _______________payment page -->
+        <div id="g-left-div-bottom">
+            <div  class="select-payment-method">Choose payment method</div>
+               
+            <div id="payment-main-div">
+                <div id="payment-div-left">
+                    <div class="g-card-div">
+                        <div class="g-icon-image"><img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530172217/marketing/vvew3rcvwfjrhknifj1z.png" alt=""></div>
+                        <div class="g-payment-method">Wallets</div>
+                        
+                    </div>
+                    <div class="g-card-div">
+                        <div class="g-icon-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSOML6ObqHhb3SQwvwDJ95rB0pZCE9uFjODg&usqp=CAU" alt=""></div>
+                        <div class="g-payment-method">Credit & Debit cards</div>
+                        
+                    </div>
+                    <div class="g-card-div">
+                        <div class="g-icon-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSOML6ObqHhb3SQwvwDJ95rB0pZCE9uFjODg&usqp=CAU" alt=""></div>
+                        <div class="g-payment-method">Sodexo</div>
+                        
+                    </div>
+                    <div class="g-card-div">
+                        <div class="g-icon-image"><img src="https://static.thenounproject.com/png/634436-200.png" alt=""></div>
+                        <div class="g-payment-method">Netbanking</div>
+                        
+                    </div>
+                    <div class="g-card-div">
+                        <div class="g-icon-image"><img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530172202/marketing/pyzcsicqsnwawi4yrpo7.png" alt=""></div>
+                        <div class="g-payment-method">Pay Later</div>
+                        
+                    </div>
+                    <div class="g-card-div">
+                        <div class="g-icon-image"><img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1581576219/marketing/p0w0w4crcgcthkom8j23.png" alt=""></div>
+                        <div class="g-payment-method">UPI</div>
+                        <div id="g-new"><img id="new-image" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NewTag_ju0z2e" alt=""></div>
+                        
+                    </div>
+                </div>
+                <div id="payment-div-right">
+                    <div id="atm-company-div">
+                        <div id="g-accept">WE ACCEPT</div>
+                        <div class="atm-img-div"><img class="atm-image" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Visa_lztyeu" alt=""></div>
+                        <div class="atm-img-div"><img  class="atm-image"src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Mastercard_wqoea2" alt=""></div>
+                      
+                        <div class="atm-img-div"><img class="atm-image"src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Amex_ozga1w" alt=""></div>
+                        <div class="atm-img-div"><img class="atm-image" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Zeta_zybqrc" alt=""></div>
+                        <div class="atm-img-div"><img class="atm-image"src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/RuPayColoured_oyd73s_soebkd" alt=""></div>
+                    </div>
+
+                  <div id="add-card-div">
+                    <div id="plus-div"> <img id="plus-image"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbu9yisDXg1n6QGCU2g-1oqzDV5vFJ1n4FQ&usqp=CAU" alt="">  </div>
+                    <div id="g-add-new">
+                        <div id="g-add-new-card-div">Add New Card</div>
+                        <div id="via-card">Save and Pay Via Cards</div>
+                        <div id="add-new-last">ADD NEW</div>
+                    </div>
+                  </div>
+
+
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+     </div>
+
+    
+
+
+
+     <!-- _________________Right dew for cart _________________ -->
+     <div id="parent-div-right"></div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    
+</body>
+ </html>  
